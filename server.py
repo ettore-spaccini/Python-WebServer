@@ -14,7 +14,11 @@ def handle(conn):
         request = conn.recv(1024).decode()
         if not request:
             return
-        method, path, _ = request.split('\r\n')[0].split()
+        try:
+            method, path, _ = request.split('\r\n')[0].split()
+        except ValueError as e:
+            error_message = str(e)
+            print(e)
         if method != 'GET':
             response = 'HTTP/1.1 405 Method Not Allowed\r\n\r\n'
             conn.sendall(response.encode())

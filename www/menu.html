@@ -5,6 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu - Ristorante Siciliano</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .menu article {
+            width: 350px;
+            text-align: center;
+        }
+
+        .menu img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -19,12 +41,12 @@
         <section class="menu">
             <article>
                 <h2>Arancini</h2>
-                <img src="images/arancini.jpg" alt="Arancini">
+                <img src="https://www.sicilianicreativiincucina.it/wp-content/uploads/2024/04/arancini-messinesi-2-585x439.jpg" alt="Arancini">
                 <p>Deliziosi arancini ripieni, fritti alla perfezione.</p>
             </article>
             <article>
                 <h2>Cannoli Siciliani</h2>
-                <img src="images/cannoli.jpg" alt="Cannoli">
+                <img src="https://www.giallozafferano.it/images/206-20605/Cannoli-siciliani_450x300.jpg" alt="Cannoli">
                 <p>Ricotta dolce e croccantezza irresistibile.</p>
             </article>
         </section>
