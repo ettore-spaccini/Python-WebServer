@@ -10,5 +10,3 @@ Questo progetto consiste in un semplice **web server HTTP** realizzato in Python
 - Layout **responsive** per mobile e desktop
 - Animazione dell’intestazione (`slideDown`)
 - Gestione base degli errori (`404 Not Found`, `405 Method Not Allowed`)
-
----
