@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #fff8f0;
+    color: #333;
+}
+
+header {
+    background-color: #b33;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    animation: slideDown 1s ease-out;
+}
+
+nav a {
+    margin: 0 1rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 1rem;
+}
+
+.hero, .menu, .contact {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.menu article, .contact p {
+    margin: 1rem 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+footer {
+    background-color: #b33;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@media (min-width: 768px) {
+    .menu {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .menu article {
+        width: 40%;
+    }
+}
